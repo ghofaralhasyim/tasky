@@ -131,7 +131,7 @@ class Pub extends BaseController
 				$finalResponse = array();
 
 				if ($captcha_response != '') {
-					$key_secret = '6LeDQA4bAAAAANx2JjqVfqnZxzJFx3GSYvIp2b4E';
+					$key_secret = '';
 
 					$check = array(
 						'secret' => $key_secret,
