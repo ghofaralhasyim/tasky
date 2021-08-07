@@ -1,0 +1,117 @@
+@import "bootstrap";
+@import "color";
+@import "media-queries";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.body-landing {
+    background-image: url("../images/bgHeader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nvr-m {
+    background-color: transparent;
+    border:none;
+    @include tablet {
+        background-color: $purp-base;
+    }
+
+    .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-brand:hover{
+        color: $purp-base-hover-light;
+    }
+
+    .nvr-nv-m {
+        li {
+            a{
+                color: #fff;
+            }
+            a:hover {
+                color: $purp-base-hover-light;
+            }
+        }
+    }
+}
+
+
+#header {
+    width: 100%;
+    height: 90%;
+    min-height: 90%;
+    display: flex;
+    justify-content: center ;
+
+    .header-area {
+        width: 100%;
+        min-height: 90%;
+        display: flex;
+        flex-direction: row;
+        background: url("../images/task-work1.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: right;
+        align-items: center;
+
+        @include tablet {
+            background-position: center;
+        }
+
+        .header-area-1{
+            width: 25%;
+            position: relative;
+            bottom: 20%;
+            left: 10%;
+            color: $purp-base;
+            text-transform: uppercase;
+
+            h1 {
+                font-size: 42px;
+
+                @include tablet {
+                    font-size: 28px;
+                }
+            }
+
+            @include tablet {
+                position: relative;
+                left: 0;
+                right: 0;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                bottom: 25%;
+                width: 100%;
+                text-align: center;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.btn-outline-purp {
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 10px;
+    border: $purp-base 1.5px solid;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+}
+
+.btn-outline-purp:hover {
+    text-decoration: none;
+    background-color: $purp-base;
+    color: #fff;
+}
